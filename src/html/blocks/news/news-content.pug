@@ -1,0 +1,84 @@
+- var arrayFirst = [{p: 'Новости Удмуртии 2.0: Татар кызы из Ижевска и кандидаты в депутаты Госдумы',span: '12:45',img: 'https://i.postimg.cc/2Lxq4JWT/article-1.jpg'},{p: 'Ижевчанка завоевала «серебро» на математической олимпиаде в Китае',span: '12:30',img: 'https://i.postimg.cc/G9PswBfY/article-2.jpg'},{p: 'Почти 600 тыс рублей присвоил кассир ижевского зоопарка ',span: '12:00',classList: 'news-article-content',wrap:'news-article-image',img:'https://i.postimg.cc/9rWwWm3k/article-3.jpg'},{p: 'Жительница Ижевска получила 17,5 лет колонии за убийство и поджог',span: '11:44',img: 'https://i.postimg.cc/9D047LQt/article-4.jpg'},{p: 'Алексей Шепталин узнал о своем назначении и.о. министра образования Удмуртии от журналистов',span: '12:12',background: 'background-image:url(https://i.postimg.cc/L62qft8S/big-item.jpg)'},{p: 'Движение транспорта временно ограничат на нескольких улицах Ижевска во время «Рыжег...',span: '11:52',img: 'https://i.postimg.cc/56nYyhb2/article-5.jpg'},{p:'Отечественные товары со знаком качества будут продвигать в крупных торговых центрах',span:'11:30',classList:'news-article-content news-long-text',wrap:'', img:''}]
+- var arraySecond = [{p:'Проверку системы оповещение в Удмуртии перенесли с 14 сентября на начало октября',span:'11:24',img:'https://i.postimg.cc/rRVDVkZc/article-7.jpg'},{p:'Вымогавших с помощью подростков взятки у продавцов алкоголя полицейских осудили...',span:'11:12',img:'https://i.postimg.cc/ThfLqVdS/article-8.jpg'},{p:'Ижевский «Зенит» на выезде разгромил тольяттинскую «Ладу»',span:'10:56',classList:'news-article-content news-long-text',wrap:''},{p:'Гулявший на свадьбе сотрудник прокуратуры устроил стрельбу в Москве',span:'10:35',img:'https://i.postimg.cc/Z0H9fW0q/article-9.jpg'},{p:'В Удмуртии приставы взыскали 37 млн рублей с водителей за пьяную езду',span:'11:05',background: 'background-image:url(https://i.postimg.cc/kM2WjFQd/img-3x.jpg)'},{p:'Знаки Удмуртии: пора свадеб и охота на зайцев',span:'10:42',img:'https://i.postimg.cc/vcm4CG6t/article-11.jpg'},{p:'Больше 120 человек пострадали в секторе Газа при попытке зарезать жертвенных баранов',span:'10:24',classList:'news-article-content',wrap:'news-article-image',img:'https://i.postimg.cc/pp1mH3fb/article-12.jpg'}]
+- var arrayThird = [{p:'Жертв смоленской катастрофы 2010 года снова эксгумируют в Польше',span:'10:08',img:"https://i.ibb.co/3WQ1YVp/lol-2x.jpg"},{p:'Дополнительные помещения появились у детской поликлиники в Индустриальном районе',span:'10:00',img: 'https://i.ibb.co/hm19BdP/img-hosp-2x.jpg'},{p:'Ижевск вошел в топ-25 рейтинга столиц российских регионов по стоимости путешествия',span:'09:57',classList: 'news-article-content',wrap:'news-article-image',img:'https://i.ibb.co/crfcBH8/img-temple-2x.jpg'},{p:'По факту ДТП с 4 погибшими под Оренбургом возбудили уголовное дело',span:'9:45',img:'https://i.ibb.co/Yhv0dMK/img-2x.jpg'},{p:'Сервис «Твой избирательный участок» создан на сайте Ижевска',span:'09:58',background: 'background-image:url(https://i.ibb.co/pRsKwkV/img-bigg-3x.jpg)'},{p:'Филиал «Удмуртэнерго» подвел итоги недели электробезопасности',span:'09:50',img:'https://i.ibb.co/LSpmyHP/child-2x.jpg'},{p:'Отопление включат в нескольких городах Удмуртии',span:'09:30',classList: 'news-article-content',wrap:'news-article-image',img:'https://i.ibb.co/3WQ1YVp/lol-2x.jpg'}]
+mixin contentBlock(arrayOfArticles)
+    ul.news-content-list-left
+        li
+            a(href="#")
+                article.news-article__item
+                    .news-article-image
+                        img(src=arrayOfArticles[0].img, alt="#") 
+                    .news-article-content
+                        p.news-article__tex= arrayOfArticles[0].p
+                        span.news-articel__date(data="")= arrayOfArticles[0].span	
+        li
+            a(href="#")
+                article.news-article__item
+                    .news-article-image
+                        img(src=arrayOfArticles[1].img, alt="#") 
+                    .news-article-content
+                        p.news-article__text= arrayOfArticles[1].p 
+                        span.news-articel__date(data="")= arrayOfArticles[1].span 
+        li
+            a(href="#")
+                article.news-article__item
+                    div(class=arrayOfArticles[2].wrap)
+                        img(src=arrayOfArticles[2].img, alt="")
+                    div(class=arrayOfArticles[2].classList)
+                        p.news-article__text= arrayOfArticles[2].p  
+                        span.news-articel__date(data="")= arrayOfArticles[2].span  	
+        li
+            a(href="#")
+                article.news-article__item
+                    .news-article-image
+                        img(src=arrayOfArticles[3].img, alt="#") 
+                    .news-article-content
+                        p.news-article__text= arrayOfArticles[3].p  
+                        span.news-articel__date(data="")= arrayOfArticles[3].span  
+    ul.news-content-list-center 
+        li
+            a(href="#")
+                article.news-article__item.big-article-item(style=arrayOfArticles[4].background)
+                    p.news-article__text.big-article__text= arrayOfArticles[4].p  
+                    span.news-articel__date(data="")= arrayOfArticles[4].span  
+        li
+            a(href="#")
+                article.news-article__item
+                    .news-article-image
+                        img(src=arrayOfArticles[5].img, alt="") 
+                    .news-article-content
+                        p.news-article__text= arrayOfArticles[5].p  
+                        span.news-articel__date(data="")= arrayOfArticles[5].span  
+        li
+            a(href="#")
+                article.news-article__item
+                    div(class=arrayOfArticles[6].wrap)
+                        img(src=arrayOfArticles[6].img, alt="")
+                    div(class=arrayOfArticles[6].classList)
+                        p.news-article__text= arrayOfArticles[6].p  
+                        span.news-articel__date(data="")= arrayOfArticles[6].span  
+
+
+block main 
+    section.news-content
+        .news-content-cards 
+            .news-content-wrapper.last-news 
+                +contentBlock(arrayFirst)
+            .advertising-banner
+            .news-content-wrapper.last-news 
+                +contentBlock(arraySecond)
+            .news-content-wrapper.last-news 
+                +contentBlock(arrayThird)
+            .news-content-wrapper.choise-news.closed 
+                +contentBlock(arrayThird)
+                +contentBlock(arraySecond)
+            .news-content-wrapper.popular-news.closed
+                +contentBlock(arraySecond)
+                +contentBlock(arraySecond)
+            .news-content-wrapper.social-news.closed
+                +contentBlock(arrayFirst)
+                +contentBlock(arraySecond)
+        ul.news-content-list.closed
+        button.show-more-news Показать ещё
+        include news-calendar.pug
+    

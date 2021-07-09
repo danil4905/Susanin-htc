@@ -1,0 +1,22 @@
+block main 
+    section.popular
+        .container#content-container
+            .popular-nav 
+                .popular-nav__title 
+                    h2 Популярное
+                ul.popular-nav-list
+                    li.popular-nav__item.popular-nav__item-active в Удмуртии
+
+                    li.popular-nav__item в России
+
+                    li.popular-nav__item в мире
+
+            .popular-cards-wrapper 
+                .popular-udm-cards 
+                    include popular-udm-cards.pug
+                .popular-rus-cards.closed 
+                    include popular-rus-cards.pug
+                .popular-world-cards.closed 
+                    include popular-udm-cards.pug
+    script 
+        include ../../../js/popularSwitch.js

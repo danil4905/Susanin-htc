@@ -1,0 +1,239 @@
+{
+    "posts": [{
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+    }],
+    "comments": [{
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+    }],
+    "profile": {
+        "name": "typicode"
+    },
+    "news": [{
+        "newsFirst": [{
+                "title": "Новости Удмуртии 2.0: Татар кызы из Ижевска и кандидаты в депутаты Госдумы",
+                "comments": "99",
+                "views": "123",
+                "time": "12:45",
+                "imgSource": "https://i.postimg.cc/2Lxq4JWT/article-1.jpg"
+            },
+            {
+                "title": "Ижевчанка завоевала «серебро» на математической олимпиаде в Китае",
+                "comments": "99",
+                "views": "123",
+                "time": "12: 30",
+                "imgSource": "https://i.postimg.cc/G9PswBfY/article-2.jpg"
+            },
+            {
+                "title": "Почти 600 тыс рублей присвоил кассир ижевского зоопарка ",
+                "comments": "99",
+                "views": "123",
+                "time": "12: 00",
+                "classList": "news-article-content",
+                "wrap": "news-article-image",
+                "imgSource": "https://i.postimg.cc/9rWwWm3k/article-3.jpg"
+            },
+            {
+                "title": "Жительница Ижевска получила 17,5 лет колонии за убийство и поджог",
+                "comments": "99",
+                "views": "123",
+                "time": "11:44",
+                "imgSource": "https://i.postimg.cc/9D047LQt/article-4.jpg"
+            },
+            {
+                "title": "Алексей Шепталин узнал о своем назначении и.о. министра образования Удмуртии от журналистов",
+                "comments": "99",
+                "views": "123",
+                "time": "12:12",
+                "fone": "background-image:url(https://i.ibb.co/sjssWXq/img-3x.jpg)"
+            },
+            {
+                "title": "Движение транспорта временно ограничат на нескольких улицах Ижевска во время «Рыжег...",
+                "comments": "99",
+                "views": "123",
+                "time": "11:52",
+                "imgSource": "https://i.postimg.cc/56nYyhb2/article-5.jpg"
+            },
+            {
+                "title": "Отечественные товары со знаком качества будут продвигать в крупных торговых центрах",
+                "comments": "99",
+                "views": "123",
+                "time": "11:30",
+                "imgSource": "",
+                "wrap": "",
+                "classList": "news-article-content news-long-text"
+            }
+        ],
+        "newsSecond": [{
+                "title": "Проверку системы оповещение в Удмуртии перенесли с 14 сентября на начало октября",
+                "comments": "99",
+                "views": "123",
+                "time": "11:24",
+                "imgSource": "https://i.postimg.cc/rRVDVkZc/article-7.jpg"
+            },
+            {
+                "title": "Вымогавших с помощью подростков взятки у продавцов алкоголя полицейских осудили...",
+                "comments": "99",
+                "views": "123",
+                "time": "11:12",
+                "imgSource": "https://i.postimg.cc/ThfLqVdS/article-8.jpg"
+            },
+            {
+                "title": "Ижевский «Зенит» на выезде разгромил тольяттинскую «Ладу»",
+                "comments": "99",
+                "views": "123",
+                "time": "10:56",
+                "classList": "news-article-content news-long-text",
+                "wrap": ""
+            },
+            {
+                "title": "Гулявший на свадьбе сотрудник прокуратуры устроил стрельбу в Москве",
+                "comments": "99",
+                "views": "123",
+                "time": "10:35",
+                "imgSource": "https://i.postimg.cc/Z0H9fW0q/article-9.jpg"
+            },
+            {
+                "title": "В Удмуртии приставы взыскали 37 млн рублей с водителей за пьяную езду",
+                "comments": "99",
+                "views": "123",
+                "time": "11:05",
+                "fone": "background-image:url(https://i.postimg.cc/kM2WjFQd/img-3x.jpg)"
+            },
+            {
+                "title": "Знаки Удмуртии: пора свадеб и охота на зайцев",
+                "comments": "99",
+                "views": "123",
+                "time": "10:42",
+                "imgSource": "https://i.postimg.cc/vcm4CG6t/article-11.jpg"
+            },
+            {
+                "title": "Больше 120 человек пострадали в секторе Газа при попытке зарезать жертвенных баранов",
+                "comments": "99",
+                "views": "123",
+                "time": "10:24",
+                "imgSource": "https://i.postimg.cc/pp1mH3fb/article-12.jpg",
+                "wrap": "news-article-image",
+                "classList": "news-article-content"
+            }
+        ],
+        "newsThird": [{
+                "title": "Жертв смоленской катастрофы 2010 года снова эксгумируют в Польше",
+                "comments": "99",
+                "views": "123",
+                "time": "10: 08",
+                "imgSource": "https://i.ibb.co/3WQ1YVp/lol-2x.jpg"
+            },
+            {
+                "title": "Дополнительные помещения появились у детской поликлиники в Индустриальном районе",
+                "comments": "99",
+                "views": "123",
+                "time": "10: 00",
+                "imgSource": "https://i.ibb.co/hm19BdP/img-hosp-2x.jpg"
+            },
+            {
+                "title": "Ижевск вошел в топ-25 рейтинга столиц российских регионов по стоимости путешествия",
+                "comments": "99",
+                "views": "123",
+                "time": "09:57",
+                "classList": "news-article-content",
+                "wrap": "news-article-image",
+                "imgSource": "https://i.ibb.co/crfcBH8/img-temple-2x.jpg"
+            },
+            {
+                "title": "По факту ДТП с 4 погибшими под Оренбургом возбудили уголовное дело",
+                "comments": "99",
+                "views": "123",
+                "time": "9:45",
+                "imgSource": "https://i.ibb.co/Yhv0dMK/img-2x.jpg"
+            },
+            {
+                "title": "Сервис «Твой избирательный участок» создан на сайте Ижевска",
+                "comments": "99",
+                "views": "123",
+                "time": "09:58",
+                "fone": "background-image:url(https://i.ibb.co/pRsKwkV/img-bigg-3x.jpg)"
+            },
+            {
+                "title": "Филиал «Удмуртэнерго» подвел итоги недели электробезопасности",
+                "comments": "99",
+                "views": "123",
+                "time": "09:50",
+                "imgSource": "https://i.ibb.co/LSpmyHP/child-2x.jpg"
+            },
+            {
+                "title": "Отопление включат в нескольких городах Удмуртии",
+                "comments": "99",
+                "views": "123",
+                "time": "09:30",
+                "classList": "news-article-content",
+                "wrap": "news-article-image",
+                "imgSource": "https://i.ibb.co/3WQ1YVp/lol-2x.jpg"
+            }
+        ],
+        "newsList": [{
+                "title": "48 голливудских фильмов с русскими персонажами",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "15-летний боксер погиб после второго нокдауна на соревнованиях во Владимире",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "Власти Удмуртии заявили об открытии движения по камскому мосту",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "Ижевские зоозащитники потребовали создания зоополиции",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "Роспотребнадзор Удмуртии: возбудитель гепатита А в воде не обнаружен",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "Об открытии движения по мосту через Каму сообщили жители Удмуртии",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "Отопление включат в нескольких городах Удмуртии",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "Отопление включат в нескольких городах Удмуртии",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "Об открытии движения по мосту через Каму сообщили жители Удмуртии",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            },
+            {
+                "title": "Об открытии движения по мосту через Каму сообщили жители Удмуртии",
+                "comments": "128",
+                "views": "312",
+                "time": "09:30"
+            }
+        ]
+    }]
+}

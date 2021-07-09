@@ -1,0 +1,128 @@
+.popular,
+.multimedia {
+  font-family: var(--font-main);
+}
+.popular-cards-grid,
+.multimedia-content-grid {
+  display: grid;
+  grid-template-columns: 500px 240px 240px;
+  grid-column-gap: 20px;
+}
+.popular-nav {
+  display: flex;
+  font-weight: bold;
+  font-size: var(--middle-size);
+  align-items: flex-end;
+  margin-top: 58px;
+}
+.popular-nav__title {
+  padding-right: 29px;
+  border-right: var(--border-main);
+  font-size: var(--big-size);
+}
+.popular-nav__item {
+  color: var(--color-dark);
+  cursor: pointer;
+}
+.popular-nav-list {
+  display: flex;
+}
+.popular-nav__item {
+  margin-left: 32px;
+  border-bottom: var(--border-main);
+}
+.popular-nav__item-active {
+  border: none;
+  color: var(--color-rusty-red);
+}
+.popular-text-block {
+  color: var(--color-dark);
+  background-color: var(--color-pale-grey);
+  height: 190px;
+  padding: 26px 20px 24px 20px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popular-text__item {
+  margin: 0;
+}
+.popular-image-block {
+  width: 240px;
+  height: 190px;
+}
+.comments-icon {
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+.popular-cards__item,
+.popular-cards__item-big {
+  margin-top: 20px;
+  transition: var(--transition-main);
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+.popular-cards__item-big a {
+  display: flex;
+}
+.popular-add {
+  color: var(--color-cool-grey);
+  font-weight: bold;
+  font-size: var(--extra-small-size);
+  display: flex;
+  justify-content: space-between;
+}
+.popular-add-social {
+  display: flex;
+}
+.popular-image-block_water {
+  background-image: url(img/img_pop_udm@2x.jpg);
+  background-size: cover;
+}
+.popular-image-block__build {
+  background-image: url(img/img_pop_udm_1@2x.jpg);
+  background-size: cover;
+}
+@media screen and (max-width: 1050px) {
+  .popular-cards-grid {
+    display: block;
+  }
+  .popular-text-block {
+    max-width: 100%;
+  }
+  .popular-image-block {
+    background-position: center;
+    width: 50%;
+  }
+  .multimedia-card__item-text {
+    max-width: 80%;
+    margin-top: 69%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .popular-nav {
+    display: block;
+  }
+  .popular-nav__title {
+    border: none;
+  }
+  .popular-nav-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .popular-cards__item-big a {
+    display: block;
+  }
+  .popular-image-block {
+    width: 100%;
+  }
+  .popular-nav__item {
+    margin-left: 0;
+  }
+}

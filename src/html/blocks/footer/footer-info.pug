@@ -1,0 +1,41 @@
+block main
+    section.footer-info
+        .container#footer-container
+            section.footer-subscribe 
+                form(action="submit")
+                    label(for="subscribe-input") Подпишитесь на ежедневную рассылку
+                    br
+                    input(type="email" placeholder="Электронная почта" id="subscribe-input" required)
+                    button.subscribe-btn(type='submit')
+                        span Подписаться 
+                        svg.tick-submit
+                            use(xlink:href='#tick-icon')
+                .footer-social
+                    ul.footer-social-list 
+                        li
+                            a(href="https://twitter.com/?lang=ru" target="_blank")
+                                svg.footer-social-icon
+                                    use(xlink:href= '#footer-tw')  
+                        li
+                            a(href="https://ru-ru.facebook.com/" target="_blank")
+                                svg.footer-social-icon
+                                    use(xlink:href= '#footer-fb')
+                        li 
+                            a(href="http://www.rss.ru/" target="_blank")
+                                svg.footer-social-icon
+                                    use(xlink:href= "#footer-rss")
+                        li#line-social 
+                            a(href="https://mail.yandex.ru/" target="_blank")
+                                svg.footer-social-icon
+                                    use(xlink:href= '#footer-mail')
+                        li  Для писем: <br>
+                            a(href="mailto:sus@nin.udm.ru") sus@nin.udm.ru
+            section.footer-copy
+                p.footer-copy__reg 
+                    <span id="ia-sus" >© ИА «Сусанин»</span> <br>Свидетельство о регистрации СМИ ИА № ФС 77-67340 выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 13.10.2016 Гиперссылка на сайт при перепечатке любых материалов обязательна.'
+                p.footer-copy__addr Адрес редакции и издателя: 426011, г. Ижевск, пер. Северный 61<br>Телефон редакции: <a href="tel:+7 (3412) 57-07-56">+7 (3412) 57-07-56</a> <br>Дизайн — Центр Высоких Технологий.
+                p.footer-copy__plus
+                    svg.header__social-icon
+                        use(xlink:href= '#footer-18-plus')
+                    span Для детей старше 16 лет
+                img(src="https://counter.yadro.ru/logo?14.5" alt="#")

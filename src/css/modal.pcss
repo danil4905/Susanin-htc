@@ -1,0 +1,215 @@
+@import "variables.pcss";
+#modal {
+  background-color: white;
+  position: absolute;
+  top: 90px;
+  right: 16%;
+  width: 370px;
+  height: 470px;
+  box-shadow: 0 16px 26px 0 rgba(0, 14, 30, 0.35);
+  font-family: var(--font-main);
+  animation-duration: 0.4s;
+  z-index: 2;
+}
+.modal__form {
+  position: relative;
+}
+@keyframes animatetop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animatedown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.modal-wrapper {
+  padding-bottom: 20px;
+}
+#modal-form__login {
+  padding: 20px;
+}
+.modal-nav__button {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--transition-main);
+  border-bottom: var(--border-main);
+  &:hover {
+    color: var(--color-rusty-red);
+    border-bottom: 1px solid var(--color-rusty-red);
+  }
+  &:active {
+    color: var(--color-tomato);
+    border-bottom: 1px solid var(--color-tomato);
+  }
+}
+.auth-active {
+  color: var(--color-rusty-red);
+  border-bottom: 1px solid white;
+}
+.modal-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+#modal-nav__close {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 74px;
+}
+.modal-close__icon:hover {
+  fill: white;
+}
+.modal-social {
+  background-color: var(--blue-gray);
+  height: 105px;
+  margin-top: 18px;
+}
+#modal-form__login {
+  margin-top: 56px;
+  width: 300px;
+}
+.modal__form input {
+  width: 280px;
+}
+#modal-form__login,
+#modal-form__signin {
+  padding-left: 20px;
+}
+.modal-input {
+  width: 330px;
+  border: none;
+  border-bottom: var(--border-main);
+  color: var(--color-dark);
+  font-size: var(--regular-size);
+  outline: none;
+  margin-bottom: 26px;
+}
+.modal-input[placeholder] {
+  font-size: var(--regular-size);
+  margin-bottom: 25px;
+}
+.form-button__submit {
+  width: 127px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--color-blue-gray);
+  color: white;
+  font-size: var(--regular-size);
+  cursor: pointer;
+  transition: var(--transition-main);
+  &:hover {
+    background-color: var(--color-rusty-red);
+  }
+  &:active {
+    background-color: var(--color-tomato);
+  }
+}
+.fogot-password {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: var(--color-blue-gray);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+  left: 255px;
+  bottom: 81px;
+  cursor: pointer;
+  transition: var(--transition-main);
+  border: 3px solid var(--color-blue-gray);
+  &:hover {
+    border: 3px solid var(--color-rusty-red);
+    background-color: var(--color-rusty-red);
+    color: white;
+  }
+  &:active {
+    background-color: var(--color-tomato);
+  }
+}
+.modal-social__items {
+  display: flex;
+  padding-left: 20px;
+}
+.modal-social__title {
+  font-size: var(--regular-size);
+  font-weight: normal;
+  line-height: 1.39;
+  color: var(--color-dark);
+  margin: 0 0 16px 20px;
+}
+.modal-close__icon {
+  width: 30px;
+  height: 30px;
+  transition: var(--transition-main);
+  &:hover {
+    background-color: red;
+    border-radius: 20px;
+  }
+}
+.modal-social-icon {
+  width: 28px;
+  height: 20px;
+  color: red;
+  transition: var(--transition-main);
+  fill: white;
+}
+.social-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-blue-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  transition: var(--transition-main);
+}
+.modal-error-wrapper {
+  width: 370px;
+  height: 90px;
+  background-color: var(--color-rusty-red);
+  color: white;
+  padding: 20px 0 0 20px;
+}
+.modal-error-wrapper-text {
+  margin: 0;
+}
+.modal-fb:hover {
+  background-color: var(--hover-fb);
+}
+.modal-vk:hover {
+  background-color: var(--hover-vk);
+}
+.modal-tw:hover {
+  background-color: var(--hover-tw);
+}
+.modal-ok:hover {
+  background-color: var(--hover-ok);
+}
+.modal-mk:hover {
+  background-color: var(--hover-mk);
+}
+.modal-gp:hover {
+  background-color: var(--hover-gp);
+}
+.invalid-input {
+  border-bottom: 1px solid var(--color-rusty-red);
+}

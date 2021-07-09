@@ -1,0 +1,77 @@
+block main 
+    .header-main-wrapper
+        .container
+            .header-main-container 
+                .header-main-left
+                    .header-logo
+                        a(href="#")
+                            svg.logo
+                                use(xlink:href= '#Лого')
+                            svg.logo.logo-small
+                                use(xlink:href= '#logo_small')    
+                    .header-city
+                        .current-city
+                            div.current-city__name
+                            div.list-of-cities.closed
+                                button.header-city__switch(value="Ижевск") Ижевск
+                                br
+                                button.header-city__switch(value="Нижний Новгород") Нижний Новгород
+                        svg.city
+                            use(xlink:href= '#arrow-city')
+                .header-main-right
+                    nav.header-nav-additional.header-nav-additional__top.closed
+                        ul.header-nav-add-list 
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#news") Новости
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Ижевск
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Политика
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Бизнес
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Деньги
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Происшествия
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Здоровье
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Спорт
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Культура
+                            li.header-nav-add__item.header-nav-add__scroll
+                                a(href="#") Прочее
+                    .header-search
+                        input.search-input.closed(type="seacrh" placeholder="Поиск..."  autofocus) 
+                        button.header-search__button.search-btn
+                            svg.search
+                                use(xlink:href= '#search-header-big')
+                    button.burger-switch.closed
+                        div.burger-switch-btn
+                            svg.header-burger-icon
+                                use(xlink:href='#burger')  
+                            span.header-burger-text.top-header-butger__text Все разделы
+                        div.burger-switch-btn.closed
+                            svg.header-burger-icon
+                                use(xlink:href='#burger-close')  
+                            span.header-burger-text.top-header-butger__text Закрыть
+                    .header-rate
+                        span.header-rate__dollar $ 63.95 ↓ € 71.96 ↑
+                    .header-social
+                        a.header-social__item(href="https://twitter.com/?lang=ru" target="_blank")
+                            svg.header__social-icon
+                                use(xlink:href= '#header-tw') 
+                        a.header-social__item(href="https://ru-ru.facebook.com/" target="_blank")
+                            svg.header__social-icon
+                                use(xlink:href= '#header-fb')
+                        a.header-social__item(href="http://www.rss.ru/" target="_blank")
+                            svg.header__social-icon
+                                use(xlink:href= '#header-rss')
+                    .header-login
+                        button.header-login__btn#switch-btn
+                            svg.header-login__icon 
+                                use(xlink:href= '#login-header')
+                            span.header-login__text Вход  
+            include ../modal/modal.pug              
+    script 
+        include ../../../js/search.js

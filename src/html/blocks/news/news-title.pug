@@ -1,0 +1,26 @@
+block main 
+    .news-top-grid
+        .news-top-wrapper
+            .news-title-top 
+                .news-title
+                    h1.news-title__item  Новости
+                .news-nav 
+                    ul.news-nav-list 
+                        li.news-nav__item.news-nav__item-active(value="last")
+                            button Последние
+
+                        li.news-nav__item(value="choise")
+                            button Выбор редактора
+
+                        li.news-nav__item(value="popular")
+                            button Популярные
+
+                        li.news-nav__item(value="discuss")
+                            button Обсуждаемые
+            article.news-top-article
+                a.news-top__item(href="") 
+                    span.news-top-article__type Главная
+                    div.news-top-articel__text-wrapper
+                        p.news-top-articel__text Российское спортивное руководство высоко оценило выступление сборной в Рио
+                        span.news-date.news-top-article__date(data="09:45") 09:45
+            include news-content.pug

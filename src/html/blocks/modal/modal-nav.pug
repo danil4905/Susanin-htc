@@ -1,0 +1,24 @@
+block main    
+    .modal-nav
+        .modal-sign
+            button(class="modal-nav__button auth-active" id="button-login") Вход
+            button(class="modal-nav__button" id="button-signin") Регистрация
+            button#modal-nav__close
+                div 
+                    svg.modal-close__icon
+                        use(xlink:href= '#close-popup-stroke-btn')
+            #modal-form__login
+                form.modal__form(action="submit" id="login-modal-form")
+                    input.modal-input.login-input(type="text" placeholder="Логин" form="login-modal-form" required)
+                    input.modal-input.password-input(type="password" placeholder="Пароль" form="login-modal-form" required)
+                    button.fogot-password(disabled=true) ?
+                    button(class="form-button__submit") Войти
+            #modal-form__signin.closed
+                form.modal__form(action="submit" id="signin-modal-form")
+                    input.modal-input.name-input(type="text" placeholder="Имя" form="signin-modal-form" required)
+                    input.modal-input.surname-input(type="text" placeholder="Фамилия" form="signin-modal-form" required)
+                    input.modal-input.email-input(type="email" placeholder="e-mail" form="signin-modal-form" rquired)
+                    input.modal-input.password-input(type="password" placeholder="Пароль" form="signin-modal-form" required)
+                    button.fogot-password(disabled=true) ?
+                    br
+                    button(class="form-button__submit") Регистрация
